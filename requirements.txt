@@ -1,0 +1,6 @@
+websocket-client
+pandas
+schedule
+gunicorn
+requests
+tinydb
