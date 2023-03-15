@@ -4,3 +4,4 @@ schedule
 gunicorn
 requests
 tinydb
+typing_extensions
