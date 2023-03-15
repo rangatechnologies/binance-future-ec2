@@ -1,6 +1,6 @@
 import websocket,json
 from BinanceFutures_Custom import Client, MarketData
-from config import API_TEST_SECRET,API_TEST_KEY
+from config import API_TEST_SECRET,API_TEST_KEY, long_entry_per,long_tp_per,short_entry_per,short_tp_per
 import math
 from tinydb import TinyDB, Query
 db = TinyDB('db.json')
@@ -40,13 +40,13 @@ def on_message(ws, message):
 
     # Calculate order prices
     # Long entry
-    long_entry_price = round(open * (1 + 0.010/100),1)
+    long_entry_price = round(open * (1 + long_entry_per/100),1)
     # Long TP
-    long_tp_price    = round(open * (1 + 0.10/100),1)
+    long_tp_price    = round(open * (1 + long_tp_per/100),1)
     # Short entry
-    short_entry_price = round(open * (1 - 0.010/100),1)
+    short_entry_price = round(open * (1 - short_entry_per/100),1)
     # Short TP
-    short_tp_price    = round(open * (1 - 0.10/100),1)
+    short_tp_price    = round(open * (1 - short_tp_per/100),1)
     print(f"Order Prices long_entry_price = {long_entry_price}, long_tp = {long_tp_price}, short_entry_price = {short_entry_price}, short_tp= {short_tp_price}")
     # @@@@@@@@@@@@@@@@@@@----------Calculate Account Balance--------@@@@@@@@@@@@@@@@
     # Calculate order size by percentage parameter
