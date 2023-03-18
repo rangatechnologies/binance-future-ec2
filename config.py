@@ -4,10 +4,10 @@ API_SECRET = 'yourapisecret'
 API_TEST_KEY ='lubzmk3mAlwu465XFr6VFVcPAHsm1695s5ZCTMZZNEV4AX2DGC5AOsKDU2LuCzqC'
 API_TEST_SECRET ='iOj7f40SaVoSanKNZ70u7vJMZuxfwHfpfAMbl5frosdM2kALBqUFm6CViIlQcmg9'
 
-long_entry_per = 0.10
+long_entry_per = 0.050
 # Long TP
 long_tp_per = 0.30
 # Short entry
-short_entry_per = -0.10
+short_entry_per = -0.050
 # Short TP
 short_tp_per= -0.30
