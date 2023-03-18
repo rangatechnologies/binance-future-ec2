@@ -166,6 +166,6 @@ def streamKline(currency, interval):
                                 on_message=on_message, on_close=on_close, on_error=on_error)
     ws.run_forever()
 
-streamKline('btcusdt', '4h')
+streamKline('btcusdt', '1m')
 
 
