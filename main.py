@@ -7,7 +7,7 @@ db = TinyDB('db.json')
 
 # @@@@@@@@@@@@@@@--------Create a client-----------@@@@@@@@@@@@@@@@
 # Create client
-client = Client(API_TEST_KEY, API_TEST_SECRET, testnet=False)
+client = Client(API_TEST_KEY, API_TEST_SECRET, testnet=True)
 stepSize = 0.001
 symbol = 'BTCUSDT'
 def on_message(ws, message):
