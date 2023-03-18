@@ -51,7 +51,7 @@ def on_message(ws, message):
     # @@@@@@@@@@@@@@@@@@@----------Calculate Account Balance--------@@@@@@@@@@@@@@@@
     # Calculate order size by percentage parameter
     balance = client.balance()
-    # print(f"balance = {balance}")
+    print(f"balance = {balance}")
     quoteAsset_balance = 0.0
     try:
         for coin in balance:
